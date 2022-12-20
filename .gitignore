@@ -2,3 +2,4 @@
 !/_gulp/
 /_gulp/*
 !/_gulp/gulpfile.js
+!/_gulp/package.json
