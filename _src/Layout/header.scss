@@ -1,5 +1,8 @@
-@use "../Foundation/base.scss" as base;
+@use "../Foundation/_base.scss" as base;
 
+body {
+    font-size: 16px;
+}
 
 .L-header {
 
