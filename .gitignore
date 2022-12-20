@@ -3,4 +3,4 @@
 /_gulp/*
 !/_gulp/gulpfile.js
 !/_gulp/package.json
-!/_gulp/dist/
+!/_gulp/dist/css/*.css
