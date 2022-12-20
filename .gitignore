@@ -1,0 +1,4 @@
+/_gulp/*
+!/_gulp/
+/_gulp/*
+!/_gulp/gulpfile.js
