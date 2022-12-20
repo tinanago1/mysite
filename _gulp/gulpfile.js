@@ -13,7 +13,7 @@ const sass = () => {
   return gulp
     .src('../_src/Layout/*.scss')
     .pipe(gulpDartSass())
-    .pipe(gulp.dest('dist/css'))
+    .pipe(gulp.dest('../dist/css'))
 }
 
 // 3.実行
