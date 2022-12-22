@@ -4,6 +4,10 @@ body {
     font-size: 16px;
 }
 
+.addClass {
+    display: none;
+}
+
 .L-header {
 
     display: flex;
@@ -38,10 +42,13 @@ body {
                 position: absolute;
                 top: 12px;
                 left: 30px;
-                
-                img {
+
+                .L-header_formWrap_searchIcon_img  {
                     width: 16px;
+
+                    
                 }
+                          
             }
 
             .L-header_formWrap_form {

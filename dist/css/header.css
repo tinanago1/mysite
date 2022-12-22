@@ -2,6 +2,10 @@ body {
   font-size: 16px;
 }
 
+.addClass {
+  display: none;
+}
+
 .L-header {
   display: flex;
   width: 100%;
@@ -22,7 +26,7 @@ body {
   top: 12px;
   left: 30px;
 }
-.L-header .L-header_formWrap .L-header_formWrap_searchIcon img {
+.L-header .L-header_formWrap .L-header_formWrap_searchIcon .L-header_formWrap_searchIcon_img {
   width: 16px;
 }
 .L-header .L-header_formWrap .L-header_formWrap_form .L-header_formWrap_form_search {
