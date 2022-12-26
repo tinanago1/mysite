@@ -2,19 +2,22 @@
 
 body {
     font-size: 16px;
+    background-color: base.$lightgrey;
 }
 
-.addClass {
+.clearClass {
     display: none;
 }
 
 .L-header {
 
+    background-color: base.$bodycolor;
+
     display: flex;
     width: 100%;
     height: 60px;
     padding: 10px;
-    border-bottom: 1px solid base.$lightgrey;
+    
 
         .L-header_logoWrap {
             
@@ -27,7 +30,7 @@ body {
                 
                     .L-header_logoWrap_h1_a_img {
                         padding-top: 5px;
-                        width: 85px;
+                        width: 75px;
                     }
                 }
             }
@@ -58,7 +61,7 @@ body {
                     background-color: base.$lightgrey;
                     border-radius: 10px;
                     height: 35px;
-                    padding-left: 40px;
+                    padding-left: 15px;
                     max-width: 216px;
 
                 }

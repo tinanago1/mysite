@@ -1,14 +1,17 @@
+// HTML elemental <====
 const inputSearch = document.querySelector(".L-header_formWrap_form_search");
 const searchIcon = document.querySelector(".L-header_formWrap_searchIcon_img");
+// HTML elemental ===>
 
-inputSearch.addEventListener("focus", () => {
+const clear = el => {
 
-    searchIcon.classList.add("addClass");
-});
+    el.addEventListener("focus", () => {
+        searchIcon.classList.add("clearClass");
 
-inputSearch.addEventListener("focusout", () => {
+        el.addEventListener("focusout", () => {
+            searchIcon.classList.remove("clearClass");
+        })
+    })
+}
 
-    searchIcon.classList.remove("addClass");
-    
-});
-
+clear(inputSearch);
