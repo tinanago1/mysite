@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="../../_src/Foundation/reset.css">
     <link rel="stylesheet" href="../../dist/css/header.css">
     <link rel="stylesheet" href="../../dist/css/homeMain.css">
-    
+    <link rel="stylesheet" href="../../dist/css/swiper.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <title>Myself</title>
 </head>
 <body>
@@ -30,11 +31,33 @@
     </header>
 
     <div class="L-homeMain_wrap">
-        <main>
+        <main>        
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">Slide 1</div>
+                    <div class="swiper-slide">Slide 2</div>
+                    <div class="swiper-slide">Slide 3</div>  
+                </div>
+                
+                <div class="swiper-pagination"></div>
 
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+            </div>
+
+            <div class="L-homeMain_wrap_contents">
+                <div class="L-homeMain_wrap_contents_article">
+                    <div class="L-homeMain_wrap_contents_article_title"></div>
+                    <div class="L-homeMain_wrap_contents_article_img"></div>
+                    <div class="L-homeMain_wrap_contents_article_text"></div>
+                </div>
+            </div>
         </main>
     </div>
 
     <script src="../../JS/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="../../JS/swiper.js"></script>
 </body>
 </html>

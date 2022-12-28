@@ -1,5 +1,25 @@
 .L-homeMain_wrap {
   width: 90%;
-  height: 500px;
   margin: 15px auto;
+}
+
+.L-homeMain_wrap_contents .L-homeMain_wrap_contents_article {
+  height: 400px;
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+}
+.L-homeMain_wrap_contents .L-homeMain_wrap_contents_article_title {
+  height: 40px;
+  background-color: red;
+  border-radius: 15px 15px 0px 0px;
+}
+.L-homeMain_wrap_contents .L-homeMain_wrap_contents_article_img {
+  background-color: blue;
+  height: 294px;
+}
+.L-homeMain_wrap_contents .L-homeMain_wrap_contents_article_txt {
+  background-color: orange;
+  height: 63px;
+  border-radius: 0px 0px 15px 15px;
 }
