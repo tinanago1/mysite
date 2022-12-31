@@ -1,17 +1,36 @@
 // HTML elemental <====
 const inputSearch = document.querySelector(".L-header_formWrap_form_search");
 const searchIcon = document.querySelector(".L-header_formWrap_searchIcon_img");
+const menuButton = document.querySelector(".mobileMenuContainer");
+const body = document.querySelector("body");
+
 // HTML elemental ===>
 
-const clear = el => {
+// inputSearch <===
+const clear = () => {
 
-    el.addEventListener("focus", () => {
+    inputSearch.addEventListener("focus", () => {
         searchIcon.classList.add("clearClass");
+        inputSearch.setAttribute("id", "focusPadding");
 
-        el.addEventListener("focusout", () => {
+        inputSearch.addEventListener("focusout", () => {
             searchIcon.classList.remove("clearClass");
+            inputSearch.removeAttribute("id");
         })
     })
 }
 
-clear(inputSearch);
+clear();
+// inputSearch ===>
+
+const menuSwitch = () => {
+    menuButton.addEventListener("click", () => {
+        body.classList.toggle("menu-on-of");
+        
+    })
+}
+
+menuSwitch();
+
+
+

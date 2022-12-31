@@ -2,69 +2,117 @@
 
 body {
     font-size: 16px;
-    background-color: base.$lightgrey;
+    background-color: base.$cLightgrey;
 }
 
 .clearClass {
     display: none;
 }
 
-.L-header {
-
-    background-color: base.$bodycolor;
-    display: flex;
-    width: 100%;
-    height: 60px;
-    padding: 10px;
-    box-shadow: 0px -10px 12px 4px;
-    
-
-        .L-header_logoWrap {
-            
-
-            .L-header_logoWrap_h1 {
+#focusPadding {
+    padding-left: 10px;
+ 
+}
 
 
-                .L-header_logoWrap_h1_a {
 
+    .L-header {
+
+        background-color: base.$cWhite;
+        display: flex;
+        width: 100%;
+        height: 60px;
+        padding: 10px;
+        box-shadow: 0px -10px 12px 4px;
+        justify-content: space-around;
+        
+
+            .L-header_logoWrap {
                 
-                    .L-header_logoWrap_h1_a_img {
-                        padding-top: 5px;
-                        width: 75px;
+
+                .L-header_logoWrap_h1 {
+
+
+                    .L-header_logoWrap_h1_a {
+
+                    
+                        .L-header_logoWrap_h1_a_img {
+                            padding-top: 5px;
+                            width: 75px;
+                        }
                     }
                 }
             }
-        }
 
-        .L-header_formWrap {
+            .L-header_formWrap {
 
-            padding: 3px 0px 0px 17px;
-            position: relative;
+                padding: 3px 0px 0px 0px;
+                position: relative;
 
-            .L-header_formWrap_searchIcon {
-                position: absolute;
-                top: 12px;
-                left: 30px;
+                .L-header_formWrap_searchIcon {
+                    position: absolute;
+                    top: 11px;
+                    left: 15px;
 
-                .L-header_formWrap_searchIcon_img  {
-                    width: 16px;
+                    .L-header_formWrap_searchIcon_img  {
+                        width: 16px;
 
-                    
+
+                    }
+                            
                 }
-                          
+
+                .L-header_formWrap_form {
+
+                    .L-header_formWrap_form_search {
+
+                        background-color: base.$cLightgrey;
+                        border-radius: 10px;
+                        height: 35px;
+                        padding-left: 40px;
+                        max-width: 185px;
+
+                    }
+                }
             }
 
-            .L-header_formWrap_form {
+            .mobileMenuContainer {
+                height: 40px;
+                width: 48px;
+                margin-left: 13px;
+                padding-top: 4px;
 
-                .L-header_formWrap_form_search {
-
-                    background-color: base.$lightgrey;
-                    border-radius: 10px;
-                    height: 35px;
-                    padding-left: 15px;
-                    max-width: 216px;
-
+                & span {
+                    margin: 0 auto;
+                    width: 30px;
+                    height: 2px;
+                    background-color: base.$cblack;
+                    display: block;
+                    margin-bottom: 7px;
                 }
             }
+
+    }
+
+.menu-on-of  {
+    
+
+    & .mobileMenuContainer{
+        & span {
+
+            transition: all 0.4s;
+
+            &:nth-child(1) {
+                transform: translate(0px, 9px) rotate(135deg);
+            }
+
+            &:nth-child(2) {
+                transform: translateX(-15px) scale(0);
+            }
+
+            &:nth-child(3) {
+                transform: translate(0px, -9px) rotate(45deg);
+            }
         }
+    }
 }

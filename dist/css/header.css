@@ -7,6 +7,10 @@ body {
   display: none;
 }
 
+#focusPadding {
+  padding-left: 10px;
+}
+
 .L-header {
   background-color: #fff;
   display: flex;
@@ -14,19 +18,20 @@ body {
   height: 60px;
   padding: 10px;
   box-shadow: 0px -10px 12px 4px;
+  justify-content: space-around;
 }
 .L-header .L-header_logoWrap .L-header_logoWrap_h1 .L-header_logoWrap_h1_a .L-header_logoWrap_h1_a_img {
   padding-top: 5px;
   width: 75px;
 }
 .L-header .L-header_formWrap {
-  padding: 3px 0px 0px 17px;
+  padding: 3px 0px 0px 0px;
   position: relative;
 }
 .L-header .L-header_formWrap .L-header_formWrap_searchIcon {
   position: absolute;
-  top: 12px;
-  left: 30px;
+  top: 11px;
+  left: 15px;
 }
 .L-header .L-header_formWrap .L-header_formWrap_searchIcon .L-header_formWrap_searchIcon_img {
   width: 16px;
@@ -35,6 +40,33 @@ body {
   background-color: #F2F2F2;
   border-radius: 10px;
   height: 35px;
-  padding-left: 15px;
-  max-width: 216px;
+  padding-left: 40px;
+  max-width: 185px;
+}
+.L-header .mobileMenuContainer {
+  height: 40px;
+  width: 48px;
+  margin-left: 13px;
+  padding-top: 4px;
+}
+.L-header .mobileMenuContainer span {
+  margin: 0 auto;
+  width: 30px;
+  height: 2px;
+  background-color: #000;
+  display: block;
+  margin-bottom: 7px;
+}
+
+.menu-on-of .mobileMenuContainer span {
+  transition: all 0.4s;
+}
+.menu-on-of .mobileMenuContainer span:nth-child(1) {
+  transform: translate(0px, 9px) rotate(135deg);
+}
+.menu-on-of .mobileMenuContainer span:nth-child(2) {
+  transform: translateX(-15px) scale(0);
+}
+.menu-on-of .mobileMenuContainer span:nth-child(3) {
+  transform: translate(0px, -9px) rotate(45deg);
 }
