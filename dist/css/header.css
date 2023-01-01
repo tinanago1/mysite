@@ -11,7 +11,11 @@ body {
   padding-left: 10px;
 }
 
-.L-header {
+#globalContainer .container {
+  position: relative;
+  height: 100vh;
+}
+#globalContainer .container .L-header {
   background-color: #fff;
   display: flex;
   width: 100%;
@@ -20,36 +24,36 @@ body {
   box-shadow: 0px -10px 12px 4px;
   justify-content: space-around;
 }
-.L-header .L-header_logoWrap .L-header_logoWrap_h1 .L-header_logoWrap_h1_a .L-header_logoWrap_h1_a_img {
+#globalContainer .container .L-header .L-header_logoWrap .L-header_logoWrap_h1 .L-header_logoWrap_h1_a .L-header_logoWrap_h1_a_img {
   padding-top: 5px;
   width: 75px;
 }
-.L-header .L-header_formWrap {
+#globalContainer .container .L-header .L-header_formWrap {
   padding: 3px 0px 0px 0px;
   position: relative;
 }
-.L-header .L-header_formWrap .L-header_formWrap_searchIcon {
+#globalContainer .container .L-header .L-header_formWrap .L-header_formWrap_searchIcon {
   position: absolute;
   top: 11px;
   left: 15px;
 }
-.L-header .L-header_formWrap .L-header_formWrap_searchIcon .L-header_formWrap_searchIcon_img {
+#globalContainer .container .L-header .L-header_formWrap .L-header_formWrap_searchIcon .L-header_formWrap_searchIcon_img {
   width: 16px;
 }
-.L-header .L-header_formWrap .L-header_formWrap_form .L-header_formWrap_form_search {
+#globalContainer .container .L-header .L-header_formWrap .L-header_formWrap_form .L-header_formWrap_form_search {
   background-color: #F2F2F2;
   border-radius: 10px;
   height: 35px;
   padding-left: 40px;
   max-width: 185px;
 }
-.L-header .mobileMenuContainer {
+#globalContainer .container .L-header .mobileMenuContainer {
   height: 40px;
   width: 48px;
   margin-left: 13px;
   padding-top: 4px;
 }
-.L-header .mobileMenuContainer span {
+#globalContainer .container .L-header .mobileMenuContainer span {
   margin: 0 auto;
   width: 30px;
   height: 2px;
@@ -58,6 +62,23 @@ body {
   margin-bottom: 7px;
 }
 
+.mobileMenu {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  z-index: 2;
+  height: 100%;
+  width: 200px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  transform: translate(200px, 0px);
+}
+.menu-on-of {
+  background-color: black;
+}
 .menu-on-of .mobileMenuContainer span {
   transition: all 0.4s;
 }

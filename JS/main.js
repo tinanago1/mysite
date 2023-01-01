@@ -2,7 +2,7 @@
 const inputSearch = document.querySelector(".L-header_formWrap_form_search");
 const searchIcon = document.querySelector(".L-header_formWrap_searchIcon_img");
 const menuButton = document.querySelector(".mobileMenuContainer");
-const body = document.querySelector("body");
+const container = document.querySelector("#globalContainer");
 
 // HTML elemental ===>
 
@@ -25,7 +25,7 @@ clear();
 
 const menuSwitch = () => {
     menuButton.addEventListener("click", () => {
-        body.classList.toggle("menu-on-of");
+        container.classList.toggle("menu-on-of");
         
     })
 }

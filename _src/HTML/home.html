@@ -12,59 +12,75 @@
     <title>Myself</title>
 </head>
 <body>
-<div id="allWrap">
-    <header class="L-header">
-        <div class="L-header_logoWrap">
-            <h1 class="L-header_logoWrap_h1">
-                <a href="home.html" class="L-header_logoWrap_h1_a">
-                    <img src="..//images/cooltext425865955896838.png" alt="" class="L-header_logoWrap_h1_a_img">
-                </a>
-            </h1>
-        </div>
-        <div class="L-header_formWrap">
-            <div class="L-header_formWrap_searchIcon">
-                <img src="../images/検索用の虫眼鏡アイコン 7.svg" alt="" class="L-header_formWrap_searchIcon_img">
+<div id="globalContainer">
+    <div class="container">
+        <header class="L-header">
+            <div class="L-header_logoWrap">
+                <h1 class="L-header_logoWrap_h1">
+                    <a href="home.html" class="L-header_logoWrap_h1_a">
+                        <img src="..//images/cooltext425865955896838.png" alt="" class="L-header_logoWrap_h1_a_img">
+                    </a>
+                </h1>
             </div>
-            <form action="" class="L-header_formWrap_form">
-                <input type="text" class="L-header_formWrap_form_search" placeholder="Search">
-            </form>
-        </div>
-        <button class="mobileMenuContainer">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-    </header>
-
-    <div class="L-homeMain_wrap">
-        <main>        
-            <div class="swiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">Slide 1</div>
-                    <div class="swiper-slide">Slide 2</div>
-                    <div class="swiper-slide">Slide 3</div>  
+            <div class="L-header_formWrap">
+                <div class="L-header_formWrap_searchIcon">
+                    <img src="../images/検索用の虫眼鏡アイコン 7.svg" alt="" class="L-header_formWrap_searchIcon_img">
+                </div>
+                <form action="" class="L-header_formWrap_form">
+                    <input type="text" class="L-header_formWrap_form_search" placeholder="Search">
+                </form>
+            </div>
+            <button class="mobileMenuContainer">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </header>
+        
+        <div class="L-homeMain_wrap">
+            <main>        
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">Slide 1</div>
+                        <div class="swiper-slide">Slide 2</div>
+                        <div class="swiper-slide">Slide 3</div>  
+                    </div>
+                    
+                    <div class="swiper-pagination"></div>
+                    
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                    
                 </div>
                 
-                <div class="swiper-pagination"></div>
-
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-
-            </div>
-
-            <div class="L-homeMain_wrap_contents">
-                <div class="L-homeMain_wrap_contents_article">
-                    <div class="L-homeMain_wrap_contents_article_title"></div>
-                    <div class="L-homeMain_wrap_contents_article_img"></div>
-                    <div class="L-homeMain_wrap_contents_article_text"></div>
+                <div class="L-homeMain_wrap_contents">
+                    <div class="L-homeMain_wrap_contents_article">
+                        <div class="L-homeMain_wrap_contents_article_title"></div>
+                        <div class="L-homeMain_wrap_contents_article_img"></div>
+                        <div class="L-homeMain_wrap_contents_article_text"></div>
+                    </div>
                 </div>
-            </div>
-        </main>
+            </main>
+        </div>
     </div>
 </div>
+<nav class="mobileMenu">
+    <ul class="mobile-menu_main">
+        <li class="mobile-menu_item">
+            <a href="">
+                <span class="menuTitle">ログイン</span>
+            </a>
+        </li>
+        <li class="mobile-menu_item">
+            <a href="">
+                <span class="menuTitle">会員登録</span>
+            </a>
+        </li>
+    </ul>
+</nav>
 
-    <script src="../../JS/main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script src="../../JS/swiper.js"></script>
+<script src="../../JS/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="../../JS/swiper.js"></script>
 </body>
 </html>
