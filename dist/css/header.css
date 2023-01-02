@@ -47,13 +47,14 @@ body {
   padding-left: 40px;
   max-width: 185px;
 }
-#globalContainer .container .L-header .mobileMenuContainer {
+#globalContainer .container .L-header .L-header_mobileMenuContainer {
   height: 40px;
   width: 48px;
   margin-left: 13px;
   padding-top: 4px;
+  z-index: 3;
 }
-#globalContainer .container .L-header .mobileMenuContainer span {
+#globalContainer .container .L-header .L-header_mobileMenuContainer span {
   margin: 0 auto;
   width: 30px;
   height: 2px;
@@ -65,29 +66,18 @@ body {
 .mobileMenu {
   position: fixed;
   top: 0px;
-  right: 0px;
+  transform: translateX(393px);
   z-index: 2;
   height: 100%;
-  width: 200px;
+  width: 170px;
   background-color: #fff;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  transform: translate(200px, 0px);
+  transition: 0.5s;
 }
-.menu-on-of {
-  background-color: black;
-}
-.menu-on-of .mobileMenuContainer span {
-  transition: all 0.4s;
-}
-.menu-on-of .mobileMenuContainer span:nth-child(1) {
-  transform: translate(0px, 9px) rotate(135deg);
-}
-.menu-on-of .mobileMenuContainer span:nth-child(2) {
-  transform: translateX(-15px) scale(0);
-}
-.menu-on-of .mobileMenuContainer span:nth-child(3) {
-  transform: translate(0px, -9px) rotate(45deg);
+.mobileMenuOn {
+  transform: translateX(223px);
+  transition: 0.5s;
 }

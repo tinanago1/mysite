@@ -81,11 +81,12 @@ body {
                     }
                 }
 
-                .mobileMenuContainer {
+                .L-header_mobileMenuContainer {
                     height: 40px;
                     width: 48px;
                     margin-left: 13px;
                     padding-top: 4px;
+                    z-index: 3;
 
                     & span {
                         margin: 0 auto;
@@ -106,16 +107,16 @@ body {
 
     position: fixed;
     top: 0px;
-    right: 0px;
+    transform: translateX(393px);
     z-index: 2;
     height: 100%;
-    width: 200px;
+    width: 170px;
     background-color: #fff;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    transform: translate(200px, 0px);
+    transition: 0.5s;
     
     .mobile-menu_main {
 
@@ -127,25 +128,8 @@ body {
         }
     }
 }
-.menu-on-of  {
-    background-color: black;
+.mobileMenuOn  {
 
-    & .mobileMenuContainer{
-        & span {
-
-            transition: all 0.4s;
-
-            &:nth-child(1) {
-                transform: translate(0px, 9px) rotate(135deg);
-            }
-
-            &:nth-child(2) {
-                transform: translateX(-15px) scale(0);
-            }
-
-            &:nth-child(3) {
-                transform: translate(0px, -9px) rotate(45deg);
-            }
-        }
-    }
+    transform: translateX(223px);
+    transition: 0.5s;
 }
