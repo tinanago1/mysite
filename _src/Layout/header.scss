@@ -107,7 +107,7 @@ body {
 
     position: fixed;
     top: 0px;
-    transform: translateX(393px);
+    right: -205px;
     z-index: 2;
     height: 100%;
     width: 170px;
@@ -116,7 +116,7 @@ body {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    transition: 0.5s;
+    transition: 0.4s;
     
     .mobile-menu_main {
 
@@ -127,9 +127,35 @@ body {
             }
         }
     }
+
+    .mobile-menu_close {
+        position: absolute;
+        top: 0;
+        right: 160px;
+        width: 50px;
+        height: 50px;
+    
+        & span {
+            &:nth-child(1) {
+                width: 30px;
+                height: 5px;
+                background-color: base.$cblack;
+                display: block;
+                transform: rotate(-135deg) translate(-7px, 0px);
+            }
+
+            &:nth-child(2) {
+                width: 30px;
+                height: 5px;
+                background-color: base.$cblack;
+                display: block;
+                transform: rotate(135deg) translate(-2px, -3px);
+            }
+        }
+    }
 }
 .mobileMenuOn  {
 
-    transform: translateX(223px);
-    transition: 0.5s;
+    right: 0;
+    transition: 0.4s;
 }
