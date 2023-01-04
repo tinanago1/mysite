@@ -3,6 +3,18 @@ body {
   background-color: #F2F2F2;
 }
 
+.bodyNotScroll {
+  overflow: hidden;
+}
+
+.bodyNotClick {
+  pointer-events: none;
+}
+
+.menuOnContainer {
+  opacity: 0.5;
+}
+
 .clearClass {
   display: none;
 }
@@ -67,7 +79,6 @@ body {
   position: fixed;
   top: 0px;
   right: -205px;
-  z-index: 2;
   height: 100%;
   width: 170px;
   background-color: #fff;
@@ -76,6 +87,7 @@ body {
   justify-content: center;
   text-align: center;
   transition: 0.4s;
+  z-index: 2;
 }
 .mobileMenu .mobile-menu_close {
   position: absolute;
